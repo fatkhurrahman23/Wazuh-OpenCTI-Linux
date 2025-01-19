@@ -50,7 +50,6 @@ By integrating Wazuh with OpenCTI, you gain the following benefits:
 ### Prerequisites
 1. **OpenCTI Instance**:
    - Version **5.12.24** or higher.
-   - Obtain an **OpenCTI API token** for querying data.
 
 2. **OpenCTI API**:
     Generate or copy your API token:
