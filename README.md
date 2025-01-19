@@ -53,11 +53,8 @@ By integrating Wazuh with OpenCTI, you gain the following benefits:
    - Obtain an **OpenCTI API token** for querying data.
 
 2. **OpenCTI API**:
-   - Generate or copy your API token:
+    Generate or copy your API token:
 
-     ![OpenCTI](images/wazuh-opencti-dashboard.png)
-
-     ![OpenCTI API Token](images/wazuh-opencti-api.png)
 
 ---
 
