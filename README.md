@@ -185,14 +185,4 @@ Feel free to customize the `custom-opencti.py` script to match additional events
 
 The Wazuh-OpenCTI integration significantly enhances detection and response capabilities by enriching alerts with threat intelligence. This automation improves visibility, speeds up response times, and enables more accurate threat identification.
 
-### Explore Further
-- [Wazuh Documentation](https://documentation.wazuh.com)
-- [OpenCTI Documentation](https://www.opencti.io/documentation)
----
 
-## Shoutout
-
-The Wazuh-OpenCTI integration is based on the work by [misje](https://github.com/misje). A big thank to him for his contributions to the community. You can explore his GitHub for more of their projects and contributions!
-
----
-# Wazuh-OpenCTI
