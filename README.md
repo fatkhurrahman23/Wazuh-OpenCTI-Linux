@@ -320,7 +320,7 @@ Feel free to customize the `custom-opencti.py` script to match additional events
 
 | Field              | Value                                                                                   |
 |--------------------|-----------------------------------------------------------------------------------------|
-| **Index**          | wazuh-alerts-4.x-2025.01.18                                                            |
+| **Index**          | wazuh-alerts-4.x-2025.09.18                                                            |
 | **Alert ID**       | xxxxxxxxx                                                                              |
 | **Input Type**     | log                                                                                     |
 | **Agent ID**       | xxxx                                                                                   |
@@ -328,7 +328,7 @@ Feel free to customize the `custom-opencti.py` script to match additional events
 | **Integration**    | opencti                                                                                 |
 | **Event Type**     | indicator_pattern_match                                                                 |
 | **Indicator Link** | [View Indicator]                                                  |
-| **Source Rule ID** | 100002                                                                                  |
+| **Source Rule ID** | 110202                                                                                  |
 | **Source IP**      | xxxxxx                                                                                  |
 | **Destination IP** | xxxx                                                                                   |
 | **Rule Description** | OpenCTI: IoC found in threat intel: xxxxx                                            |
