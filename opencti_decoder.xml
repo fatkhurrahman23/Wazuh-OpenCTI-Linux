@@ -1,0 +1,12 @@
+<!-- OpenCTI Integration -->
+<decoder name="opencti-integration">
+  <prematch>->opencti:</prematch>
+  <regex>^(.+)->opencti:(.+)$</regex>
+  <order>source, json_payload</order>
+</decoder>
+
+<decoder name="opencti-integration-json">
+  <parent>opencti-integration</parent>
+    <prematch>opencti:</prematch>
+    <plugin_decoder offset="after_prematch">JSON_Decoder</plugin_decoder>
+</decoder>

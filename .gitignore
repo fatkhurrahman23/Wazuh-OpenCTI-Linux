@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+
+# IDE/Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+*.tmp
+
+# Logs
+*.log
+logs/
+
+# Wazuh specific
+integrations.log
+opencti-integration.log
+
+# Configuration files with sensitive data
+ossec.conf.local
+*api_key*
+*.token
+
+# Test files
+test_*.json
+*test*.log
