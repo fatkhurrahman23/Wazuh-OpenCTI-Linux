@@ -74,7 +74,7 @@ def debug(msg, do_log = False):
     if not do_log:
         return
 
-    now = time.strftime('%a %b %d %H:%M:%S %Z %Y')
+    now = time.strftime('%Y-%m-%d %H:%M:%S')
     msg = '{0}: {1}\n'.format(now, msg)
     f = open(log_file,'a')
     f.write(msg)
@@ -210,11 +210,21 @@ def relationship_with_indicators(node):
     return next(iter(sorted(related, key=lambda x:indicator_sort_func(x['indicator']))), None)
 
 def add_context(source_event, event):
-    # Add source information to the original alert (naming convention
-    # from official VirusTotal integration):
+    # Add source information (opencti.source) to the original alert
+    # (naming convention from official VirusTotal integration):
     event['opencti']['source'] = {}
     event['opencti']['source']['alert_id'] = source_event['id']
     event['opencti']['source']['rule_id'] = source_event['rule']['id']
+    
+    if 'agent' in source_event:
+        if 'name' in source_event['agent']:
+            event['opencti']['source']['agent_name'] = source_event['agent']['name']
+        if 'ip' in source_event['agent']:
+            event['opencti']['source']['agent_ip'] = source_event['agent']['ip']
+        if 'id' in source_event['agent']:
+            event['opencti']['source']['agent_id'] = source_event['agent']['id']
+    if 'GeoLocation' in source_event:
+        event['opencti']['source']['GeoLocation'] = source_event['GeoLocation']
     if 'syscheck' in source_event:
         event['opencti']['source']['file'] = source_event['syscheck']['path']
         event['opencti']['source']['md5'] = source_event['syscheck']['md5_after']
